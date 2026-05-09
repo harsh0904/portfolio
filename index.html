@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Katariya – Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Harsh Katariya – Full Stack Developer specializing in React, Node.js, Docker, and cloud infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">HK<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Harsh</span><br/>
+        Full Stack <span class="outline-text">Developer</span>
+      </h1>
+      <p class="hero-sub">I build scalable web apps, craft cloud infrastructure, and ship products that people love.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" id="view-work-btn">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects Shipped</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">Full</span><span class="stat-label">Stack Developer</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">DevOps</span><span class="stat-label">Enthusiast</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">harsh.ts</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="var">harsh</span> = {
+  <span class="key">role</span>: <span class="str">"Full Stack Dev"</span>,
+  <span class="key">stack</span>: [
+    <span class="str">"React"</span>, <span class="str">"Node.js"</span>,
+    <span class="str">"MongoDB"</span>, <span class="str">"Docker"</span>,
+    <span class="str">"Kubernetes"</span>
+  ],
+  <span class="key">passion</span>: <span class="str">"Building things"</span>,
+  <span class="key">available</span>: <span class="bool">true</span>,
+};</code></pre>
+      </div>
+      <div class="floating-badge badge-react">⚛ React</div>
+      <div class="floating-badge badge-node">🟢 Node.js</div>
+      <div class="floating-badge badge-docker">🐳 Docker</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm <strong>Harsh Katariya</strong>, a passionate Full Stack Developer who loves turning ideas into high-quality digital products. I specialize in building end-to-end web applications — from polished UIs to robust backend APIs and cloud-native deployments.</p>
+          <p>I enjoy working across the entire stack: crafting beautiful frontends with React, designing scalable APIs with Node.js, and deploying applications using Docker, Kubernetes, and CI/CD pipelines.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to projects, and constantly leveling up my DevOps skills.</p>
+          <div class="about-links">
+            <a href="https://github.com/harsh0904" target="_blank" class="about-link" id="github-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:katariyaharsh09@gmail.com" class="about-link" id="email-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              Email Me
+            </a>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card" id="card-location">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-title">Location</div>
+              <div class="info-val">Jaipur, India</div>
+            </div>
+          </div>
+          <div class="info-card" id="card-focus">
+            <div class="info-icon">🎯</div>
+            <div>
+              <div class="info-title">Focus</div>
+              <div class="info-val">Full Stack + DevOps</div>
+            </div>
+          </div>
+          <div class="info-card" id="card-education">
+            <div class="info-icon">🎓</div>
+            <div>
+              <div class="info-title">Education</div>
+              <div class="info-val">Computer Science</div>
+            </div>
+          </div>
+          <div class="info-card" id="card-status">
+            <div class="info-icon">✅</div>
+            <div>
+              <div class="info-title">Status</div>
+              <div class="info-val">Open to Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category" id="skill-frontend">
+          <div class="skill-cat-title">
+            <span class="skill-cat-icon">🎨</span> Frontend
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Redux</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-backend">
+          <div class="skill-cat-title">
+            <span class="skill-cat-icon">⚙️</span> Backend
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-devops">
+          <div class="skill-cat-title">
+            <span class="skill-cat-icon">🚀</span> DevOps & Cloud
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux/VPS</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">PM2</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-tools">
+          <div class="skill-cat-title">
+            <span class="skill-cat-icon">🛠️</span> Tools
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Gemini API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured" id="project-resume">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-number">01</div>
+              <div class="project-links">
+                <a href="https://github.com/harsh0904" target="_blank" class="project-link" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-badge">Featured</div>
+            <h3 class="project-title">AI Resume Builder</h3>
+            <p class="project-desc">A full-stack AI-powered resume builder using Google Gemini API. Users can input their details and get professionally generated resume content. Deployed on a VPS with Nginx reverse proxy.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>Gemini API</span><span>MongoDB</span><span>Nginx</span><span>PM2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-gmail">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-number">02</div>
+              <div class="project-links">
+                <a href="https://github.com/harsh0904" target="_blank" class="project-link" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Gmail Clone</h3>
+            <p class="project-desc">A full-featured Gmail clone with React frontend and Node.js backend. Implements Inbox, Starred, Snoozed, Drafts with MongoDB persistence, JWT auth, and Redux state management.</p>
+            <div class="project-tech">
+              <span>React</span><span>Redux</span><span>Node.js</span><span>MongoDB</span><span>JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-cicd">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-number">03</div>
+              <div class="project-links">
+                <a href="https://github.com/harsh0904/Ci-cd" target="_blank" class="project-link" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">CI/CD Pipeline</h3>
+            <p class="project-desc">Automated CI/CD infrastructure using Jenkins for orchestration, Docker for containerization, and Kubernetes for scalable deployment. Reduces deployment time and ensures zero-downtime releases.</p>
+            <div class="project-tech">
+              <span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="contact-sub">Have a project in mind or just want to say hi? My inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="send-btn">Send Message ✉️</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-card" id="contact-email-card">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-detail">
+              <div class="contact-label">Email</div>
+              <a href="mailto:katariyaharsh09@gmail.com" class="contact-value">katariyaharsh09@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-github-card">
+            <div class="contact-icon">💻</div>
+            <div class="contact-detail">
+              <div class="contact-label">GitHub</div>
+              <a href="https://github.com/harsh0904" target="_blank" class="contact-value">github.com/harsh0904</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location-card">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail">
+              <div class="contact-label">Location</div>
+              <span class="contact-value">Jaipur, India 🇮🇳</span>
+            </div>
+          </div>
+          <div class="availability-banner">
+            <span class="avail-dot"></span>
+            <span>Available for freelance & full-time roles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <a href="#hero" class="nav-logo">HK<span class="dot">.</span></a>
+      <a href="https://github.com/harsh0904" target="_blank" class="footer-gh" id="footer-github">GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
