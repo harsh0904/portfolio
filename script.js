@@ -43,7 +43,7 @@ document.querySelectorAll('.mob-link').forEach(link => {
 
 // ===== SCROLL REVEAL =====
 const reveals = document.querySelectorAll(
-  '.skill-category, .project-card, .info-card, .contact-card, .contact-form-wrap, .about-text, .availability-banner'
+  '.skill-category, .project-card, .info-card, .contact-card, .contact-form-wrap, .about-text, .availability-banner, .cert-card'
 );
 const observer = new IntersectionObserver(entries => {
   entries.forEach((entry, i) => {
